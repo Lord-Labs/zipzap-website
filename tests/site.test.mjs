@@ -21,6 +21,10 @@ test('all local resources and section links resolve', async () => {
       if (symbol) assert.ok(symbols.includes(`id="${symbol}"`), `Missing icon: ${symbol}`);
     } else assert.equal(new URL(link).protocol, 'https:');
   }
+  const css = await readFile(new URL('../styles.css', import.meta.url), 'utf8');
+  for (const [, path] of css.matchAll(/url\('\/(.*?)'\)/g)) {
+    assert.ok((await stat(new URL(`../${path}`, import.meta.url))).isFile(), `Missing CSS resource: ${path}`);
+  }
 });
 test('pause preserves progress, resume advances, completion is bounded', () => {
   assert.equal(advance(64, true), 64);

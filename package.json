@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
-    "check": "node --check app.js && node --check locales.js && node --check scripts/build.mjs && node --check scripts/serve.mjs && node --test tests/*.test.mjs"
+    "check": "node --check app.js && node --check ascii.js && node --check locales.js && node --check scripts/build.mjs && node --check scripts/serve.mjs && node --test tests/*.test.mjs"
   },
   "engines": { "node": "24.x" }
 }
