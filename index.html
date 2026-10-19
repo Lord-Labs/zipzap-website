@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <title>ZipZap — Good things come to those who download.</title>
+  <meta name="description" content="Your files. Your pace. ZipZap is a free, open-source download manager for Windows 11. Safe resume, a simple queue, and no account required.">
+  <meta property="og:title" content="ZipZap — Your next download, under control.">
+  <meta property="og:description" content="Free and open source. Built for reliable downloads on Windows 11, with English and Arabic support.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/social.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/bolt.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body id="top">
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+  <div class="announcement"><span class="status-dot"></span><span data-i18n="announcement">HELLO, WORLD. THE FIRST ZIPZAP BETA IS HERE.</span><a href="https://github.com/Lord-shaban/ZipZap/releases/tag/v0.1.0-beta.1" data-i18n="releaseNotes">Release notes ↗</a></div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="ZipZap home"><img src="/assets/favicon.svg" alt="" width="32" height="32">ZipZap<span class="brand-period">_</span></a>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#features" data-i18n="features">Features</a><a href="#how-it-works" data-i18n="how">How it works</a><a href="#open-source" data-i18n="openSource">Open source</a><a href="#faq" data-i18n="faq">FAQ</a>
+      </nav>
+      <div class="nav-actions"><button class="language" id="language" lang="ar" aria-label="Switch to Arabic">العربية</button><a class="button button-small button-ink" href="#download"><span data-i18n="getZipZap">Get ZipZap</span><svg class="icon"><use href="/assets/icons.svg#arrow"/></svg></a><button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navigation"><svg class="icon"><use href="/assets/icons.svg#menu"/></svg></button></div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container">
+      <div class="hero-copy">
+        <a class="eyebrow beta-link" href="https://github.com/Lord-shaban/ZipZap/releases/tag/v0.1.0-beta.1"><span class="tiny-square"></span><span data-i18n="betaLabel">V0.1.0-BETA.1 · FREE & OPEN SOURCE</span><span>↗</span></a>
+        <h1><span data-i18n="hero1">Less waiting.</span><br><span data-i18n="hero2" class="orange">More getting.</span><span class="cursor" aria-hidden="true">_</span></h1>
+        <p class="hero-description" data-i18n="heroDescription">Meet your downloads’ new home. A free, open-source download manager that puts you in control. Pause. Resume. Carry on.</p>
+        <div class="hero-buttons"><a class="button button-orange" href="#download"><svg class="icon"><use href="/assets/icons.svg#download"/></svg><span data-i18n="downloadWindows">Download for Windows</span><span class="button-corner">↗</span></a><a class="text-link" href="#playground"><span data-i18n="tryDemo">Take a little test drive</span><span>↘</span></a></div>
+        <div class="hero-meta"><span><svg class="icon"><use href="/assets/icons.svg#windows"/></svg>Windows 11 · x64</span><span data-i18n="noAccount">No account. No subscription.</span></div>
+      </div>
+      <figure class="hero-art"><img src="/assets/bolt.webp" alt="A lightning bolt sculpted from ASCII characters, surrounded by flowing files" width="1536" height="1024" fetchpriority="high"><figcaption><span>[ FIG. 01 — ZIP, ZAP, DONE. ]</span><span aria-hidden="true">+ + +</span></figcaption><span class="art-coordinate" aria-hidden="true">40° ↓ / 010101</span></figure>
+    </section>
+    <div class="principles container"><span><svg class="icon"><use href="/assets/icons.svg#code"/></svg><span data-i18n="principle1">Open code. Nothing hidden.</span></span><span><svg class="icon"><use href="/assets/icons.svg#shield"/></svg><span data-i18n="principle2">Your files stay on your device.</span></span><span><svg class="icon"><use href="/assets/icons.svg#globe"/></svg><span data-i18n="principle3">English & العربية, built in.</span></span><span class="mono" data-i18n="madeFor">[ MADE FOR YOUR DESKTOP ]</span></div>
+
+    <section id="playground" class="playground container section reveal">
+      <div class="section-top"><p class="eyebrow" data-i18n="playgroundLabel">01 / A LITTLE LESS CHAOS</p><p class="mono muted" data-i18n="demoDisclaimer">INTERACTIVE ILLUSTRATION · NOT THE APP</p></div>
+      <div class="playground-heading"><h2 data-i18n="playgroundTitle">Big files. Small effort.</h2><p data-i18n="playgroundDescription">A place for everything you’re downloading.<br>Try pausing a transfer. We’ll keep your place.</p></div>
+      <div class="demo-stage">
+        <span class="stage-label" aria-hidden="true">~/downloads/</span><div class="stage-plus" aria-hidden="true">+</div>
+        <div class="download-window" dir="ltr">
+          <div class="window-top"><span class="window-brand"><img src="/assets/favicon.svg" width="20" height="20" alt="">ZipZap</span><span class="window-title" data-i18n="yourDownloads">Your downloads</span><span class="window-dots" aria-hidden="true">− &nbsp; □ &nbsp; ×</span></div>
+          <div class="window-toolbar"><span><span class="status-dot"></span><span data-i18n="oneActive">1 active transfer</span></span><span class="demo-tag" data-i18n="sampleFiles">SAMPLE FILES</span></div>
+          <div class="transfer active-transfer"><div class="file-icon orange-file"><svg class="icon"><use href="/assets/icons.svg#file"/></svg><span>ZIP</span></div><div class="transfer-info"><div class="transfer-title"><strong>weekend-project.zip</strong><span id="demo-percent">64%</span></div><div class="progress-track" role="progressbar" aria-label="Sample download progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="64" id="demo-progress"><span style="transform:scaleX(.64)"></span></div><div class="transfer-meta"><span id="demo-status" data-i18n="downloading">Downloading</span><span data-i18n="sampleSize">Illustrative transfer · 1.2 GB</span></div></div><button class="transfer-action" id="demo-toggle" aria-label="Pause sample download"><svg class="icon"><use href="/assets/icons.svg#pause"/></svg></button></div>
+          <div class="transfer"><div class="file-icon"><svg class="icon"><use href="/assets/icons.svg#file"/></svg><span>PDF</span></div><div class="transfer-info"><div class="transfer-title"><strong>the-good-stuff.pdf</strong><span class="complete-label"><svg class="icon"><use href="/assets/icons.svg#check"/></svg><span data-i18n="complete">Complete</span></span></div><div class="transfer-meta"><span>24.8 MB</span><span data-i18n="savedLocally">Saved locally. All yours.</span></div></div></div>
+          <div class="transfer"><div class="file-icon"><svg class="icon"><use href="/assets/icons.svg#file"/></svg><span>ISO</span></div><div class="transfer-info"><div class="transfer-title"><strong>linux-weekend.iso</strong><span class="queued-label" data-i18n="queued">Queued</span></div><div class="transfer-meta"><span>2.6 GB</span><span data-i18n="waitingTurn">Waiting its turn</span></div></div></div>
+          <div class="window-bottom"><span data-i18n="localQueue">LOCAL QUEUE / YOUR RULES</span><button id="demo-reset"><svg class="icon"><use href="/assets/icons.svg#reset"/></svg><span data-i18n="restartDemo">Restart demo</span></button></div>
+        </div>
+        <div class="demo-sticker"><span aria-hidden="true">↖</span><span data-i18n="pauseHint">Go on, hit pause.<br>It’s okay to take a break.</span></div>
+      </div>
+      <p class="demo-footnote" data-i18n="demoFootnote">A simplified illustration of the workflow. Progress and files are examples, not performance measurements.</p>
+    </section>
+
+    <section class="features container section" id="features">
+      <div class="section-top"><p class="eyebrow" data-i18n="featuresLabel">02 / ALL THE RIGHT THINGS</p><span class="mono muted">[ + ]</span></div>
+      <h2 class="reveal" data-i18n="featuresTitle">A download manager.<br>Minus the baggage.</h2>
+      <div class="feature-grid">
+        <article class="feature reveal"><span class="feature-number">[ 01 ]</span><pre class="ascii-mini" aria-hidden="true">      ┌───┐
+  ───▶│ ↓ │◀───
+      └─┬─┘
+    ════╧════</pre><h3 data-i18n="feature1Title">Pick up where you left off.</h3><p data-i18n="feature1Text">Pause a download or restart the app. ZipZap reuses validated progress when the server supports resume.</p><span class="feature-tag" data-i18n="tag1">SAFE RESUME</span></article>
+        <article class="feature reveal"><span class="feature-number">[ 02 ]</span><pre class="ascii-mini" aria-hidden="true">  ──────▶ ┐
+  ──────▶ ├─▶ [↓]
+  ──────▶ ┘
+  + + + + + + +</pre><h3 data-i18n="feature2Title">More paths. One destination.</h3><p data-i18n="feature2Text">Bounded parallel connections for servers that support them. A safe fallback for those that don’t.</p><span class="feature-tag" data-i18n="tag2">SMART CONNECTIONS</span></article>
+        <article class="feature reveal"><span class="feature-number">[ 03 ]</span><pre class="ascii-mini" aria-hidden="true">  [01] ████████
+  [02] ████░░░░
+  [03] ░░░░░░░░
+       ↑ you decide</pre><h3 data-i18n="feature3Title">Less juggling. More control.</h3><p data-i18n="feature3Text">Keep your queue in order, limit bandwidth, and see what’s happening. Your connection, on your terms.</p><span class="feature-tag" data-i18n="tag3">QUEUE & BANDWIDTH</span></article>
+      </div>
+    </section>
+
+    <section class="how-section section" id="how-it-works"><div class="container how-layout"><div class="how-copy reveal"><p class="eyebrow" data-i18n="howLabel">03 / FROM LINK TO LOCAL</p><h2 data-i18n="howTitle">Less copy-paste.<br>More click-done.</h2><p class="section-description" data-i18n="howDescription">Keep your browsing flow. Send a direct file link from Chrome or Edge to your desktop, with an explicit “Download with ZipZap” action.</p><ol class="steps"><li><span>01</span><div><h3 data-i18n="step1Title">Make yourself at home.</h3><p data-i18n="step1Text">Install ZipZap on Windows 11 x64.</p></div></li><li><span>02</span><div><h3 data-i18n="step2Title">Connect your browser.</h3><p data-i18n="step2Text">Set up the bundled Chrome / Edge extension and native bridge using the guide.</p></div></li><li><span>03</span><div><h3 data-i18n="step3Title">Give that link a new home.</h3><p data-i18n="step3Text">Choose “Download with ZipZap” on a direct file link. Your desktop takes it from there.</p></div></li></ol><a class="text-link" href="https://github.com/Lord-shaban/ZipZap/blob/main/docs/USER_GUIDE.md"><span data-i18n="setupGuide">Read the setup guide</span><span>↗</span></a></div><div class="browser-art reveal"><img src="/assets/folder.webp" alt="An ASCII folder receiving a download arrow, with files orbiting around it" loading="lazy" width="1536" height="1024"><div class="browser-context"><svg class="icon"><use href="/assets/icons.svg#link"/></svg><span>Download with ZipZap</span><span>↗</span></div><p class="mono" data-i18n="browserCaption">YOUR BROWSER → YOUR DESKTOP → YOUR FILES</p></div></div></section>
+
+    <section class="source-section container section" id="open-source"><div class="source-art reveal" aria-hidden="true"><pre>        .──────────.
+      .'  .──────.  '.
+     /   /  &lt; /&gt;  \   \
+    |   |   OPEN   |   |
+    |   |  SOURCE  |   |
+     \   \        /   /
+      '.  '──────'  .'
+        '──────────'
+      + NO BLACK BOXES +</pre><span class="stamp">100%<br>OPEN</span></div><div class="source-copy reveal"><p class="eyebrow" data-i18n="sourceLabel">04 / OPEN BY NATURE</p><h2 data-i18n="sourceTitle">Good software.<br>No fine print.*</h2><p class="section-description" data-i18n="sourceDescription">Free to use. Free to inspect. Free to make better. ZipZap is built with Rust and Tauri, with its code out in the open under the MIT license.</p><a class="button button-outline" href="https://github.com/Lord-shaban/ZipZap"><svg class="icon"><use href="/assets/icons.svg#github"/></svg><span data-i18n="exploreCode">Explore the source</span><span>↗</span></a><p class="source-footnote" data-i18n="sourceFootnote">*Okay, one line: it’s a beta. Your feedback helps shape what comes next.</p></div></section>
+
+    <section class="faq-section container section" id="faq"><div class="faq-intro"><p class="eyebrow" data-i18n="faqLabel">05 / BEFORE YOU ASK</p><h2 data-i18n="faqTitle">A few good<br>questions.</h2><a class="text-link" href="https://github.com/Lord-shaban/ZipZap/discussions"><span data-i18n="askQuestion">Ask us on GitHub</span><span>↗</span></a></div><div class="faq-list"><details><summary><span data-i18n="q1">Is ZipZap really free?</span><span class="faq-plus" aria-hidden="true">+</span></summary><p data-i18n="a1">Yes. ZipZap is free and open source under the MIT license. No account or subscription is required.</p></details><details><summary><span data-i18n="q2">Which operating systems are supported?</span><span class="faq-plus" aria-hidden="true">+</span></summary><p data-i18n="a2">The published beta is for Windows 11 x64. macOS, Linux, and mobile versions are not available.</p></details><details><summary><span data-i18n="q3">Can I download videos from any website?</span><span class="faq-plus" aria-hidden="true">+</span></summary><p data-i18n="a3">ZipZap handles direct HTTP and HTTPS file links. Video extraction, protected streams, torrents, and automatic browser interception are outside the published beta.</p></details><details><summary><span data-i18n="q4">What happens if a download is interrupted?</span><span class="faq-plus" aria-hidden="true">+</span></summary><p data-i18n="a4">ZipZap saves recoverable progress and validates it before resuming. Resume depends on server support and the file remaining unchanged. An unsafe resume may require a fresh download.</p></details><details><summary><span data-i18n="q5">Why does Windows show a security warning?</span><span class="faq-plus" aria-hidden="true">+</span></summary><p><span data-i18n="a5">This first beta is unsigned, so Windows may warn before installation. Verify the installer against the published SHA-256 checksum and read the release notes before deciding to install.</span> <a href="https://github.com/Lord-shaban/ZipZap/releases/tag/v0.1.0-beta.1" data-i18n="releaseNotes">Release notes ↗</a></p></details><details><summary><span data-i18n="q6">Does it support Arabic?</span><span class="faq-plus" aria-hidden="true">+</span></summary><p data-i18n="a6">Yes. The desktop app includes English and Arabic, with right-to-left support. This website speaks both, too — use the language switch at the top.</p></details></div></section>
+
+    <section class="download-section" id="download"><div class="container download-inner"><div class="download-heading"><p class="eyebrow" data-i18n="downloadLabel">READY WHEN YOU ARE /</p><h2 data-i18n="downloadTitle">Your next download,<br>under control.</h2><p data-i18n="downloadDescription">A little order for your corner of the internet.</p><div class="download-options"><a class="button button-paper" data-installer href="https://github.com/Lord-shaban/ZipZap/releases/download/v0.1.0-beta.1/ZipZap_0.1.0-beta.1_x64-setup.exe"><svg class="icon"><use href="/assets/icons.svg#windows"/></svg><span data-i18n="downloadWindows">Download for Windows</span><span>↓</span></a><span class="mono">v0.1.0-beta.1 · Windows 11 x64 · 3.4 MB</span></div><p class="beta-notice" data-i18n="betaNotice">Unsigned beta. Verify the SHA-256 checksum before installing.</p><div class="release-links"><a href="https://github.com/Lord-shaban/ZipZap/releases/download/v0.1.0-beta.1/SHA256SUMS.txt" data-i18n="checksums">SHA-256 checksums ↗</a><a href="https://github.com/Lord-shaban/ZipZap/releases/download/v0.1.0-beta.1/ZipZap_browser_0.1.0-beta.1.zip" data-i18n="extension">Browser extension ↗</a><a href="https://github.com/Lord-shaban/ZipZap/blob/main/docs/USER_GUIDE.md" data-i18n="installationGuide">Installation guide ↗</a></div></div><pre class="download-ascii" aria-hidden="true">       ░░████░░
+       ▒████▒
+      ▓████▓
+     ████████████
+         ▓████▓
+        ▒████▒
+       ░████░
+       ████
+      ▓██▓
+      ▒▓
+
+   [ LET IT FLOW. ]</pre></div></section>
+  </main>
+  <footer class="container footer"><div class="footer-top"><a class="brand" href="#top"><img src="/assets/favicon.svg" width="28" height="28" alt="">ZipZap<span class="brand-period">_</span></a><p data-i18n="footerTagline">A small app. A better download day.</p><div class="footer-links"><a href="https://github.com/Lord-shaban/ZipZap">GitHub ↗</a><a href="https://github.com/Lord-shaban/ZipZap/blob/main/docs/USER_GUIDE.md" data-i18n="docs">Docs ↗</a><a href="https://github.com/Lord-shaban/ZipZap/issues" data-i18n="reportBug">Report a bug ↗</a></div></div><div class="footer-bottom"><span data-i18n="footerLicense">© 2026 ZipZap · Open source, MIT licensed.</span><a href="https://github.com/Lord-shaban/zipzap-website" data-i18n="websiteSource">This website is open source, too. ↗</a><span class="mono">[ END OF FILE ]</span></div></footer>
+</body>
+</html>
