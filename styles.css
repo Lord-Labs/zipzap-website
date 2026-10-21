@@ -131,7 +131,7 @@ img{max-width:100%}
 .demo-bottom{display:flex;align-items:center;justify-content:space-between;font-size:11px;color:#b6cfc1;border-top:1px solid #496a59;margin-top:18px;gap:10px}
 .demo-bottom button{width:44px;height:44px;display:grid;place-items:center;border:0;flex-shrink:0}
 .connection-art{display:flex;align-items:center;margin-block:40px 28px;direction:ltr;min-height:125px}
-.connection-node{background:#eef6f1;border:1px solid #c5dace;border-radius:5px;padding:10px;font:10px var(--mono);color:var(--emerald)}
+.connection-node{background:#eef6f1;border:1px solid #c5dace;border-radius:5px;padding:10px;font:10px var(--mono);color:var(--dark)}
 .connection-lines{position:relative;flex:1;min-width:0;padding-block:5px;display:grid;gap:16px}
 .connection-lines i{height:8px;background:linear-gradient(transparent 45%,#cadcd3 45%,#cadcd3 55%,transparent 55%);position:relative;overflow:hidden;text-align:center}
 .connection-lines b{position:relative;top:-5px;white-space:nowrap;background:white;color:var(--emerald);font:10px var(--mono);font-weight:400}
@@ -213,6 +213,7 @@ details>p{padding-block:0 24px;padding-inline-end:28px;font-size:14px;line-heigh
 details>p a{color:var(--emerald);text-decoration:underline;text-underline-offset:3px}
 .download-section{position:relative;overflow:hidden;background:#eaf3ed;border-block:1px solid #d0e0d5;padding:96px 0;isolation:isolate}
 .download-content{position:relative;text-align:center}
+.download-content .eyebrow{color:var(--dark)}
 .download-ascii{position:absolute;inset:7% -15% auto;z-index:-2;text-align:center;font:clamp(26px,4vw,60px)/1.6 var(--mono);letter-spacing:25px;color:#397f6138;white-space:pre;direction:ltr;mask-image:radial-gradient(ellipse,transparent 30%,#000 90%)}
 .download-glow{position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse,#f5faf6 15%,transparent 75%);pointer-events:none}
 .download-logo{border-radius:14px;margin-bottom:24px;box-shadow:0 0 0 7px #ffffff80}
@@ -296,4 +297,6 @@ details>p a{color:var(--emerald);text-decoration:underline;text-underline-offset
   [dir=rtl] h1{font-size:clamp(42px,10vw,60px)}[dir=rtl] h2{font-size:36px}[dir=rtl] .hero-kicker{font-size:11px}[dir=rtl] .hero-meta{font-size:10px}[dir=rtl] .stage-overline{font-size:10px}[dir=rtl] .chrome-caption{font-size:9px}[dir=rtl] .download-content h2{font-size:43px}
 }
 @media(max-width:360px){.container{width:calc(100% - 32px)}.feature-card{padding:22px}.resume-card .card-index{inset-inline-start:80px;top:36px}.queue-art>div{font-size:9px}.footer-links{gap:12px}.hero-buttons .button{font-size:11px}}
+.release-details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:48px}.release-details article{border-top:1px solid var(--line);padding-top:24px}.release-details .mono{font-size:10px;color:var(--muted)}.release-details h3{font-size:22px;line-height:1.3;margin-block:16px 12px}.release-details p{font-size:14px;line-height:1.8;color:var(--muted)}
+@media(max-width:800px){.release-details{grid-template-columns:1fr;gap:24px}.release-details h3{font-size:23px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}

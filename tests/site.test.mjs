@@ -39,6 +39,12 @@ test('download points to the verified published beta, not a guessed latest URL',
   const installer = html.match(/data-installer href="([^"]+)"/)[1];
   const url = new URL(installer);
   assert.equal(url.hostname, 'github.com');
-  assert.match(url.pathname, /^\/Lord-shaban\/ZipZap\/releases\/download\/v0\.1\.0-beta\.1\/ZipZap_0\.1\.0-beta\.1_x64-setup\.exe$/);
+  assert.match(url.pathname, /^\/Lord-shaban\/ZipZap\/releases\/download\/v0\.2\.0-beta\.1\/ZipZap_0\.2\.0-beta\.1_x64-setup\.exe$/);
+  const version = url.pathname.split('/')[5].slice(1);
+  for (const [, asset] of html.matchAll(/href="(https:\/\/github\.com\/Lord-shaban\/ZipZap\/releases\/download\/[^\"]+)"/g)) {
+    const target = new URL(asset);
+    assert.equal(target.pathname.split('/')[5], `v${version}`);
+    assert.ok(target.pathname.endsWith('SHA256SUMS.txt') || target.pathname.includes(`_${version}_`) || target.pathname.endsWith(`_${version}.zip`));
+  }
   assert.match(html, /Unsigned beta/);
 });
