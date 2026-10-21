@@ -2,8 +2,8 @@
 
 Independent landing and download website for [ZipZap](https://github.com/Lord-shaban/ZipZap).
 
-A responsive English/Arabic landing page with RTL support, a real desktop-app
-screenshot, static ASCII engravings, and a user-started pause/resume illustration.
+A responsive English/Arabic landing page with RTL support, real desktop-app
+screenshots, static ASCII engravings, and a user-started pause/resume illustration.
 The illustration uses sample files and simulated progress; it makes no downloads
 and is not a performance measurement.
 
@@ -26,15 +26,19 @@ run local checks before merging.
 
 ## Content and assets
 
-Download links target the published `v0.1.0-beta.1` Windows 11 x64 beta.
+Download links target the published `v0.2.0-beta.1` Windows 11 x64 beta.
 Update the installer, extension, checksum, release-note links, version copy,
 Arabic translations and release-link test together when a new beta is published.
 Development-only capabilities must not be advertised as shipped.
 
 - `assets/zipzap.svg` is the original application icon, copied unchanged from
   ZipZap's `assets/icon.svg`. The original emerald remains `#087f70`.
-- `assets/desktop-ar.png` is the real Arabic Windows beta screenshot; the
-  smaller feature diagrams are explicitly labeled as illustrations.
+- `assets/desktop-ar.jpg` and `assets/desktop-en.jpg` are current 0.2.0-beta.1
+  Windows WebView2 captures from 2026-10-21. They use a native debug host with
+  the production frontend and isolated state, showing real shared-core loopback
+  downloads with verified output hashes. They are not installed-release or
+  performance evidence. The main image follows the page language. The older
+  PNG files are retained historical assets; feature diagrams remain illustrations.
 - Inter, Noto Sans Arabic, and IBM Plex Mono are self-hosted. Their OFL licenses
   are included. No font provider requests are made by visitors.
 - UI icons use Lucide. Brand marks use Font Awesome Free and Simple Icons.

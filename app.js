@@ -62,8 +62,12 @@ function setLanguage(next) {
     ? 'مدير تحميل مجاني ومفتوح المصدر لويندوز 11. استئناف آمن، وقائمة تنزيلات بسيطة، ودعم للعربية. بلا حساب أو اشتراك.'
     : 'Your files. Your pace. ZipZap is a free, open-source download manager for Windows 11. Safe resume, a simple queue, and no account required.';
   document.querySelector('.app-screenshot').alt = next === 'ar'
-    ? 'تطبيق ZipZap الحقيقي بالعربية، بشريط جانبي أخضر وتنزيلات محلية مكتملة'
-    : 'The real ZipZap beta in Arabic, with an emerald sidebar and locally completed downloads';
+    ? 'تطبيق ZipZap 0.2.0-beta.1 الحقيقي بالعربية، مع قائمة تنزيلات الاختبار المحلية'
+    : 'The real ZipZap 0.2.0-beta.1 in English, showing local test downloads';
+  const screenshot = `/assets/desktop-${next === 'ar' ? 'ar' : 'en'}.jpg`;
+  document.querySelector('.app-screenshot').src = screenshot;
+  document.querySelector('.screenshot-link').href = screenshot;
+  document.querySelector('.stage-caption a').href = screenshot;
   document.querySelector('.screenshot-link').setAttribute('aria-label', next === 'ar' ? 'عرض صورة تطبيق ZipZap كاملة' : 'View full screenshot of the published ZipZap beta');
   document.querySelector('.brand').setAttribute('aria-label', next === 'ar' ? 'ZipZap — الرئيسية' : 'ZipZap home');
   document.querySelector('#demo-reset').setAttribute('aria-label', next === 'ar' ? 'إعادة التنزيل التوضيحي' : 'Restart sample download');
